@@ -142,7 +142,6 @@ def backtrack(enode, visited, newparent, startx, starty, newegoal):
             if enode == [float(startx), float(starty)]:
                 print("Goal Reached")
                 break
-    print("The shortest path is:" )
 def visualise(newegoal,visited):
     # explored,ind=obs_coord()
     index=1
@@ -259,13 +258,13 @@ def djikstra(pnode,enode,startx,starty):
     visualise(newegoal,visited)
 
 print("#######################################DIJKSTRA'S ALGORITHM########################################################")
-startX=input("input x coordinate for initial node")
-startY=input("input y coordinate for initial node")
-goalX=input("input x coordinate for goal node")
-goalY=input("input y coordinate for goal node")
-pnode = [float(startX),float(startY)]
-egoal=[float(goalX),float(goalY)]
+startvalx=float(input("input x coordinate for initial node"))
+startvaly=float(input("input y coordinate for initial node"))
+goalvalx=float(input("input x coordinate for goal node"))
+goalvaly=float(input("input y coordinate for goal node"))
+pnode = [startvalx,startvaly]
+egoal=[goalvalx,goalvaly]
 search(pnode)
 end(egoal)
-djikstra(pnode,egoal,startX,startY)
+djikstra(pnode,egoal,startvalx,startvaly)
     
