@@ -2,9 +2,8 @@ import pygame
 import numpy as np
 from sys import exit
 import math
-import time
 from queue import PriorityQueue
-from ram import obs_coord
+from Map import obs_coord
 #Defining action sets. We will initially use same as BFS with cost as 1 and write 4 new functions to update cost as 1.4
 #Our given action set is A= {(1,0), (-1,0), (0,1), (0,-1), (1,1), (-1,1), (1,-1), (-1,-1)}
 #Lets first define set of possible routes
