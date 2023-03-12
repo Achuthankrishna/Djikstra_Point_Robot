@@ -224,11 +224,12 @@ def djikstra(pnode,enode,startx,starty):
     node=[]
     node.append(pnode)
     parents=[]
+    #initialsing new parent when old curr is popped
     parents.append(pnode)
     costcome=[]
     visited=[]
     #Let the cost be zero initally
-    cost=float('Inf')
+    cost=float(0)
     costcome.append(cost)
     newparent=[]
     newegoal=[]
