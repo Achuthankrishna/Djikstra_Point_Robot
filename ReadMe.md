@@ -16,5 +16,5 @@ python3 djikstra_vyachu07.py
 To check the plot , use the following command
 ```python
 cd proj2_vyshnav_achuthan
-python3 map.py
+python3 Map.py
 ```
