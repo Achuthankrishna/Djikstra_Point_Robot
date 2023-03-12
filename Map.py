@@ -19,7 +19,7 @@ def pathu():
     Trianlge=[(460,25),(460,225),(510,125)]
     Trianlge1=[(455,10),(455,240),(520,125)]
     for i in range(6):
-        angle_deg = 60 * i - 30
+        angle_deg = 60 * i - 60
         angle_rad = math.pi / 180 * angle_deg
         x = center[0] + side_length1 * math.cos(angle_rad)
         y = center[1] + side_length1 * math.sin(angle_rad)
